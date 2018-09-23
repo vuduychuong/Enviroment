@@ -1,7 +1,10 @@
 # https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
-# tạo file: sudo nano /etc/bash_completion.d/git-completion.bash (Change path if need)
-# file bash: sudo nano ~/.bash_aliases
-
+# Download file to local
+# sudo curl -L https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -o ~/git-completion.bash
+#
+# Copy this file to: sudo nano ~/.bash_aliases
+# Open ~/.bashrc or ~/.bash_profile and add: source ~/.bash_aliases
+#
 
 # set PATH so it includes user's private bin if it exists
 if [ -d "$HOME/bin" ] ; then
@@ -111,7 +114,7 @@ fi)'
 
 
 ### Change path below with your directory
-source /etc/bash_completion.d/git-completion.bash
+source ~/git-completion.bash
 
 alias i='cd /home/hatd/ishipper'
 alias g='cd /home/hatd/GP_internal'
